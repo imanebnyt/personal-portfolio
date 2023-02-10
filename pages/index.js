@@ -48,23 +48,23 @@ export default function Home() {
               <li className='text-gray-900 dark:text-gray-300'>
                 <BsFillMoonStarsFill onClick = {() => setDarkMode(!darkMode)}className='cursor-pointer text-2xl'/>
               </li>
-              <li><a href='/imane.pdf' target = 'blank'className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8 font-montserrat font-semibold'>CV</a></li>
+              <li><a href='/imane.pdf' target = 'blank' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8 font-montserrat font-semibold'>CV</a></li>
             </ul>
           </nav>
           <div className='text-center p-10 py-10'>
             <h2 className='text-5xl py-2 text-pink-700 font-bold
              font-montserrat'>Imane</h2>
             <h3 className='text-2xl py-2 font-semibold font-montserrat dark:text-gray-400'>Développement et design.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-400'>Étudiante en Bachelor d'informatique et passionnée par le design 2D/3D, le développement (et aussi le sport) !</p>
+            <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-400'>Étudiante en BUT Informatique et passionnée par le design 2D/3D, le développement (et aussi le sport) !</p>
           </div>
           <div className='text-5xl flex justify-center py-3 gap-16 text-gray-800 dark:text-gray-400'>
-            <a href='https://linkedin.com/in/imanebenyettou' target='_blank'><AiFillLinkedin/></a>
-            <a href = 'https://github.com/imanebnyt?tab=repositories' target = '_blank'><AiFillGithub/></a>
-            <a href = 'https://behance.net/imanebe' target = '_blank'><AiFillBehanceSquare/></a>
-            <a href = 'mailto:imane.benyettou@etu.u-paris.fr' target = '_blank'><HiMail/></a>
+            <a href='https://linkedin.com/in/imanebenyettou' target='_blank' rel = 'noreferrer'><AiFillLinkedin/></a>
+            <a href = 'https://github.com/imanebnyt?tab=repositories' target = '_blank' rel = 'noreferrer'><AiFillGithub/></a>
+            <a href = 'https://behance.net/imanebe' target = '_blank' rel = 'noreferrer'><AiFillBehanceSquare/></a>
+            <a href = 'mailto:imane.benyettou@etu.u-paris.fr' target = '_blank' rel = 'noreferrer'><HiMail/></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-pink-800 rounded-full w-80 h-80 mt-10 overflow-hidden'>
-            <Image src = {imane} />
+            <Image src = {imane} alt = "hero picture"/>
           </div>
         </section>
         <section className='min-h-screen flex items-center justify-center'>
@@ -141,7 +141,7 @@ export default function Home() {
                 Implémentation Java du jeu Hex
               </p>
               <div className='flex pt-4 justify-center gap-1'>
-                <p><a href='https://github.com/imanebnyt/hex-game-201-202' target = '_blank' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
+                <p><a href='https://github.com/imanebnyt/hex-game-201-202' target = '_blank' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
               </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
@@ -152,8 +152,8 @@ export default function Home() {
                 Une to-do list crée en React
               </p>
               <div className='flex pt-4 justify-center gap-1'>
-                <p><a href='https://simple-to-do-list-app-three.vercel.app/' target = '_blank ' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Site</a></p>
-                <p><a href='https://github.com/imanebnyt/simple-to-do-list-app' target = '_blank' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
+                <p><a href='https://simple-to-do-list-app-three.vercel.app/' target = '_blank ' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Site</a></p>
+                <p><a href='https://github.com/imanebnyt/simple-to-do-list-app' target = '_blank' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
               </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
@@ -164,8 +164,8 @@ export default function Home() {
                 Tic-Tac-Toe crée en HTML, CSS et Javascript
               </p>
               <div className='flex pt-4 justify-center gap-1'>
-                <p><a href='https://js-tic-tac-toe-ashen.vercel.app/' target = '_blank' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Site</a></p>
-                <p><a href='https://github.com/imanebnyt/js-tic-tac-toe' target = '_blank' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
+                <p><a href='https://js-tic-tac-toe-ashen.vercel.app/' target = '_blank' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Site</a></p>
+                <p><a href='https://github.com/imanebnyt/js-tic-tac-toe' target = '_blank' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
               </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
@@ -176,14 +176,14 @@ export default function Home() {
                 Projet scolaire implémentant le jeu du 6 qui prend en Java
               </p>
               <div className='flex pt-4 justify-center gap-1'>
-                <p><a href='https://github.com/imanebnyt/6-qui-prend-java' target = '_blank' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
+                <p><a href='https://github.com/imanebnyt/6-qui-prend-java' target = '_blank' rel = 'noreferrer' className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md font-montserrat font-semibold'>Code</a></p>
               </div>
             </div>
           </div>
-          <p className='font-montserrat text-right text-gray-900 dark:text-gray-300'><a href='https://github.com/imanebnyt?tab=repositories' target = '_blank' className='hover:underline'>Plus de projets sur Github</a> </p>
+          <p className='font-montserrat text-right text-gray-900 dark:text-gray-300'><a href='https://github.com/imanebnyt?tab=repositories' target = '_blank' rel = 'noreferrer' className='hover:underline'>Plus de projets sur Github</a> </p>
         </section>
         <section className='flex flex-col min-h-fit justify-end'>
-            <p className='font-montserrat text-center font-semibold text-pink-800 dark:text-gray-300 text-xl pb-10'><a href = "mailto:imane.benyettou@etu.u-paris.fr" target = '_blank' className='hover:underline'>Email : imane.benyettou@etu.u-paris.com</a></p>
+            <p className='font-montserrat text-center font-semibold text-pink-800 dark:text-gray-300 text-xl pb-10'><a href = "mailto:imane.benyettou@etu.u-paris.fr" target = '_blank' rel = 'noreferrer' className='hover:underline'>Email : imane.benyettou@etu.u-paris.com</a></p>
         </section>
       </main>
     </div>
