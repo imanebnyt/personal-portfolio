@@ -24,27 +24,29 @@ import {SiJava} from 'react-icons/si';
 import {SiCplusplus} from 'react-icons/si'
 import { SiPython } from 'react-icons/si';
 
+import {useState} from 'react';
 
 import imane from '../public/imane.png';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <>
+    <div className={darkMode ? "dark": ""}>
       <Head>
         <title>imane.codes</title>
         <meta name="description" content="imane.codes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
       </Head>
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 dark:bg-gray-900'>
         <section className = "min-h-screen">
           <nav className="py-10 mb-12 flex justify-between px-10">
-            <h1 className='text-xl font-montserrat font-bold'>imane.codes</h1>
+            <h1 className='text-xl font-montserrat font-bold text-gray-900 dark:text-gray-300'>imane.codes</h1>
             <ul className='flex items-center'>
-              <li>
-                <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
+              <li className='text-gray-900 dark:text-gray-300'>
+                <BsFillMoonStarsFill onClick = {() => setDarkMode(!darkMode)}className='cursor-pointer text-2xl'/>
               </li>
               <li><a href='/imane.pdf' target = 'blank'className='bg-gradient-to-r from-pink-700 to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8 font-montserrat font-semibold'>CV</a></li>
             </ul>
@@ -52,10 +54,10 @@ export default function Home() {
           <div className='text-center p-10 py-10'>
             <h2 className='text-5xl py-2 text-pink-700 font-bold
              font-montserrat'>Imane</h2>
-            <h3 className='text-2xl py-2 font-semibold font-montserrat'>Développement et design.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>Étudiante en Bachelor d'informatique et passionnée par le design 2D/3D, le développement (et aussi le sport) !</p>
+            <h3 className='text-2xl py-2 font-semibold font-montserrat dark:text-gray-400'>Développement et design.</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-400'>Étudiante en Bachelor d'informatique et passionnée par le design 2D/3D, le développement (et aussi le sport) !</p>
           </div>
-          <div className='text-5xl flex justify-center py-3 gap-16 text-gray-800'>
+          <div className='text-5xl flex justify-center py-3 gap-16 text-gray-800 dark:text-gray-400'>
             <a href='https://linkedin.com/in/imanebenyettou' target='_blank'><AiFillLinkedin/></a>
             <a href = 'https://github.com/imanebnyt?tab=repositories' target = '_blank'><AiFillGithub/></a>
             <a href = 'https://behance.net/imanebe' target = '_blank'><AiFillBehanceSquare/></a>
@@ -67,9 +69,9 @@ export default function Home() {
         </section>
         <section className='min-h-screen flex items-center justify-center'>
           <div>
-            <h3 className='text-3xl py-1 font-montserrat font-bold text-center'>Compétences</h3>
+            <h3 className='text-3xl font-montserrat font-bold text-center text-gray-900 dark:text-gray-400'>Compétences</h3>
             <div className = 'py-10'>
-              <div className='text-7xl flex justify-center py-7 gap-20 text-pink-800'>
+              <div className='text-7xl flex justify-center py-7 gap-20 text-pink- dark:text-gray-300'>
                 <div className='flex-row'>
                   <SiAdobeillustrator/>
                   <p className = 'text-sm font-montserrat text-center py-2 font-semibold'>Illustrator</p>
@@ -87,7 +89,7 @@ export default function Home() {
                   <p className='text-sm font-montserrat text-center py-2 font-semibold'>Blender</p>
                 </div>
               </div>
-              <div className='text-7xl flex justify-center py-7 gap-20 text-pink-800'>
+              <div className='text-7xl flex justify-center py-7 gap-20 text-pink-800 dark:text-gray-300'>
                 <div className='flex-row'>
                   <SiReact/>
                   <p className='text-sm font-montserrat text-center py-2 font-semibold'>React</p>
@@ -105,7 +107,7 @@ export default function Home() {
                   <p className='text-sm font-montserrat text-center py-2 font-semibold'>SQL</p>
                 </div>
               </div>
-              <div className='text-7xl flex justify-center py-7 gap-20 text-pink-800'>
+              <div className='text-7xl flex justify-center py-7 gap-20 text-pink-800 dark:text-gray-300'>
                 <div className='flex-row'>
                   <SiSolidity/>
                   <p className='text-sm font-montserrat text-center py-2 font-semibold'>Solidity</p>
@@ -128,7 +130,7 @@ export default function Home() {
         </section>
         <section className='min-h-screen px-20'>
           <div>
-            <h3 className='text-3xl py-1 font-montserrat font-bold text-center'>Projets</h3>
+            <h3 className='text-3xl py-1 font-montserrat font-bold text-center text-gray-900 dark:text-gray-400'>Projets</h3>
           </div>
           <div className="lg:flex gap-10 ">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
@@ -178,13 +180,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className='font-montserrat text-right'><a href='https://github.com/imanebnyt?tab=repositories' target = '_blank' className='hover:underline'>Plus de projets sur Github</a> </p>
+          <p className='font-montserrat text-right text-gray-900 dark:text-gray-300'><a href='https://github.com/imanebnyt?tab=repositories' target = '_blank' className='hover:underline'>Plus de projets sur Github</a> </p>
         </section>
         <section className='flex flex-col min-h-fit justify-end'>
-            <p className='font-montserrat text-ce96nter font-semibold text-pink-800 text-xl pb-20 text-center'><a href = "mailto:imane.benyettou@etu.u-paris.fr" target = '_blank' className='hover:underline'>Email : imane.benyettou@etu.u-paris.com</a></p>
+            <p className='font-montserrat text-center font-semibold text-pink-800 dark:text-gray-300 text-xl pb-10'><a href = "mailto:imane.benyettou@etu.u-paris.fr" target = '_blank' className='hover:underline'>Email : imane.benyettou@etu.u-paris.com</a></p>
         </section>
       </main>
-    </>
+    </div>
   )
 }
 
