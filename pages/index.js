@@ -71,7 +71,7 @@ export default function Home() {
           <div>
             <h3 className='text-3xl font-montserrat font-bold text-center text-gray-900 dark:text-gray-400'>Compétences</h3>
             <div className = 'py-10'>
-              <div className='text-7xl flex justify-center py-7 gap-20 text-pink- dark:text-gray-300'>
+              <div className='text-7xl flex justify-center py-7 gap-20 text-pink-900 dark:text-gray-300'>
                 <div className='flex-row'>
                   <SiAdobeillustrator/>
                   <p className = 'text-sm font-montserrat text-center py-2 font-semibold'>Illustrator</p>
